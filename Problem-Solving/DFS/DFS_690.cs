@@ -36,26 +36,26 @@ namespace Problem_Solving.DFS
 
 
         private int DFS(Dictionary<int, IList<int>> employees,
-                         Dictionary<int, int> employeeImportance,
-                         HashSet<int> visited,
-                         int id)
+                        Dictionary<int, int> employeeImportance,
+                        HashSet<int> visited,
+                        int id)
         {
             visited.Add(id);
 
 
-            bool IsVisited = false;
+            bool isVisited = false;
 
             int importance = employeeImportance[id];
 
 
-            foreach (int EmpId in employees[id])
+            foreach (int empId in employees[id])
             {
-                IsVisited = visited.Contains(EmpId);
+                isVisited = visited.Contains(empId);
 
-                if (IsVisited)
+                if (isVisited)
                     continue;
 
-                importance += DFS(employees, employeeImportance, visited, EmpId);
+                importance += DFS(employees, employeeImportance, visited, empId);
             }
 
             return importance;
@@ -69,10 +69,10 @@ namespace Problem_Solving.DFS
             var visited = new HashSet<int>();
 
 
-            int SubordinatesImportance = DFS(employeesSubordinates, employeesImportance, visited, id);
+            int subordinatesImportance = DFS(employeesSubordinates, employeesImportance, visited, id);
 
 
-            return employeesImportance[id] + SubordinatesImportance;
+            return subordinatesImportance;
         }
     }
 

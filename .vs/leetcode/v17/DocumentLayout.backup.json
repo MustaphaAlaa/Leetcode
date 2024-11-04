@@ -17,7 +17,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 208,
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -44,10 +44,9 @@
               "RelativeDocumentMoniker": "Problem-Solving\\Program.cs",
               "ToolTip": "D:\\code\\leetcode\\leetcode\\Problem-Solving\\Program.cs",
               "RelativeToolTip": "Problem-Solving\\Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAswCoAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAswCQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T13:31:54.701Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T13:31:54.701Z"
             },
             {
               "$type": "Document",
@@ -57,7 +56,7 @@
               "RelativeDocumentMoniker": "Problem-Solving\\DFS\\DFS_690.cs",
               "ToolTip": "D:\\code\\leetcode\\leetcode\\Problem-Solving\\DFS\\DFS_690.cs*",
               "RelativeToolTip": "Problem-Solving\\DFS\\DFS_690.cs*",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAowDUAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAiwEoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-04T12:57:58.712Z",
               "EditorCaption": ""

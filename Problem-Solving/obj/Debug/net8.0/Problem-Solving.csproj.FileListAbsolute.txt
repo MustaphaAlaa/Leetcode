@@ -12,3 +12,4 @@ D:\code\leetcode\leetcode\Problem-Solving\obj\Debug\net8.0\refint\Problem-Solvin
 D:\code\leetcode\leetcode\Problem-Solving\obj\Debug\net8.0\Problem-Solving.pdb
 D:\code\leetcode\leetcode\Problem-Solving\obj\Debug\net8.0\Problem-Solving.genruntimeconfig.cache
 D:\code\leetcode\leetcode\Problem-Solving\obj\Debug\net8.0\ref\Problem-Solving.dll
+D:\code\leetcode\leetcode\Problem-Solving\obj\Debug\net8.0\Problem-Solving.sourcelink.json
