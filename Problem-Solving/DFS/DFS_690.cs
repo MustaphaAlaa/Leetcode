@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Problem_Solving.DFS
+namespace Problem_Solving.DFS.LCode_690
 {
 
     public class LeetCode_690
@@ -23,7 +23,6 @@ namespace Problem_Solving.DFS
 
         private Dictionary<int, int> GetEmployeeImportance(IList<Employee> employees)
         {
-
             Dictionary<int, int> employeeImportance = new();
 
             foreach (Employee employee in employees)
@@ -37,25 +36,14 @@ namespace Problem_Solving.DFS
 
         private int DFS(Dictionary<int, IList<int>> employees,
                         Dictionary<int, int> employeeImportance,
-                        HashSet<int> visited,
                         int id)
         {
-            visited.Add(id);
-
-
-            bool isVisited = false;
-
+ 
             int importance = employeeImportance[id];
-
 
             foreach (int empId in employees[id])
             {
-                isVisited = visited.Contains(empId);
-
-                if (isVisited)
-                    continue;
-
-                importance += DFS(employees, employeeImportance, visited, empId);
+                importance += DFS(employees, employeeImportance, empId);
             }
 
             return importance;
@@ -66,21 +54,10 @@ namespace Problem_Solving.DFS
 
             var employeesSubordinates = GetEmployeesSubordinates(employees);
             var employeesImportance = GetEmployeeImportance(employees);
-            var visited = new HashSet<int>();
 
-
-            int subordinatesImportance = DFS(employeesSubordinates, employeesImportance, visited, id);
-
+            int subordinatesImportance = DFS(employeesSubordinates, employeesImportance, id);
 
             return subordinatesImportance;
         }
-    }
-
-
-    public class Employee
-    {
-        public int id;
-        public int importance;
-        public IList<int> subordinates;
     }
 }
