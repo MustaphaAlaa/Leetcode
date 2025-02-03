@@ -9,9 +9,9 @@ namespace Problem_Solving.DFS.LCode_690
 
     public class LeetCode_690_v2
     {
-        //This solution is inspired by DSA course
-        //Instead of using 2 dictionary, i used one hashtable
-        // it's key the employee's id, the value the employee obj itself  
+        //This solution is inspired by DSA course.
+        //Instead of using 2 dictionaries, i used one hash table.
+        //Its key the employee's id, and the value is the employee object itself.  
 
         public Dictionary<int, Employee> GetEmployee(IList<Employee> employees)
         {
