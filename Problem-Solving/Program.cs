@@ -11,11 +11,6 @@ class Program
     static void Main(string[] args)
     {
 
-        int[] ints = new int[5];
-        ints[0] = 1998;
-        foreach (var item in ints)
-        {
-            System.Console.WriteLine(item);
-        }
+         
     }
 }
